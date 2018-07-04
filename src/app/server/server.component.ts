@@ -8,8 +8,13 @@ import { Component } from '@angular/core';
 
 })
 export class ServerComponent {
-  serverId: 10;
-  ServerStatus: 'offline';
+  // tslint:disable-next-line:no-inferrable-types
+  serverId: number = 10 ;
+  // tslint:disable-next-line:no-inferrable-types
+  ServerStatus: string = 'offline';
 
+  getServerStatus() {
+    return this.ServerStatus;
+  }
 
 }
